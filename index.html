@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker Way</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        html, body{
+            scroll-behavior: smooth;
+        }
+
+        h1{
+            color: #fff;
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 400%;
+            font-family: tahoma;
+        }
+        h2{
+            color: #fff;
+            text-align: center;
+            margin-top: 0px;
+            font-size: 130%;
+            font-family: tahoma;
+        }
+        h3{
+            font-weight:7px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #023947;
+            text-align: center;
+            font-size:x-large;
+            margin: 3% auto 1% auto;
+            padding: 1%;
+            background-color: #687D75;
+        }
+        h4{
+            color: #023947;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: larger;
+            margin-left: 3%;
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+            font-size: large;
+        }
+        div.text{
+            margin: 2% 20% 1% 20%;
+        }
+
+
+        body{
+            margin: 1px;
+        }
+
+        header{
+            display:block;
+            background-color: #023947;
+            width: 100%;
+        }
+        div.head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        div.titulo{
+            margin-left: 15%;
+        }
+
+        nav{
+            text-align: center;
+        }
+
+        .LogoRedonda{
+            width: auto;
+            border-radius: 50%;
+            margin: 1% 1% 1% 1%;
+            border-style: inset;
+            border-color: #B79C77;
+        }
+
+        .botao{
+            font-family:arial;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 700;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+			display: inline-block;
+			text-decoration: none;
+        }
+        .BotaoHead{
+            background:#B79C77;
+			color: #fff;
+			box-shadow:0 5px 0  #856f51;
+            border-radius: 15px;
+            margin: 1%;
+        }
+        .BotaoHead:hover{
+            background:#856f51;
+			color: #fff;
+			box-shadow:0 5px 0  #856f51;
+        }
+        .BotaoHead:active{
+            position: relative;
+			top: 5px;
+			box-shadow:none;
+        }
+
+
+        .baner{
+            width: auto;
+            margin: 1% auto auto auto;
+        }
+
+
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            border-style:inset;
+            border-color: #B79C77;
+            margin: 0% 5% 3% 5%;
+            padding: 1%;
+        }
+
+        div.img-tipo{
+            margin: 1%;
+            text-align: center;
+        }
+        div.img-tipo img{
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border-style: inset;
+            border-color: #B79C77;
+            margin-top: 1%;
+        }
+        div.leg{
+            font-size: x-large;
+            text-align: center;
+            margin: 1%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #023947;
+            font-size: larger;
+        }
+
+        div.img-segura{
+            margin: 10%;
+        }
+
+        footer{
+            background-color: #687D75;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 1;
+        }
+        .copy{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        div.media{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 1px;
+            padding: 2px;
+        }
+        ul{
+            list-style: none;
+            margin: 0px;
+        }
+        li{
+            display: inline;
+        }
+        .img-midias{
+            width: 40px;
+            margin: 7px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            border-radius: 50%;
+            bottom: 12px;
+            right: 12px;
+            width: 50px;
+            height: 50px;
+            background-color: #023947;
+            text-decoration: none;
+        }
+        .btn::after {
+            content: "▲";
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            transition: margin-top 250ms;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="img/logo.jpg" alt="logo" class="LogoRedonda">
+            <div class="titulo">
+                <h1><strong>BROKER</strong> WAY</h1> 
+                <H2>CORRETORA DE SEGUROS</H2>
+            </div>
+        </div>
+        <nav> <!--BOTOES DE NAVEGAÇÃO-->
+            <a href="index.html" button class=" botao BotaoHead">INÍCIO</a>
+            <a href="produtos.html" class=" botao BotaoHead">SEGUROS</a>
+            <a href="index.html#seguradora" class=" botao BotaoHead">PARCEIROS</a>
+            <a href="sobrenos.html" class=" botao BotaoHead">SOBRE NÓS</a>
+            <a href="sobrenos.html#contato" class=" botao BotaoHead">CONTATO</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!--BOATÃO DE VOLTAR AO TOPO-->
+        <a href="#" class="btn"></a>
+
+        <div style="text-align: center;">
+            <a><img src="img/baner.png" class="baner"></a>
+        </div>
+
+        <!--SEGUROS-->
+        <section>
+            <h3>TIPOS DE SEGUROS</h3>
+            <article class="flex-container">
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-vida"><img src="img/seguradoras/vida.jpg"></a>
+                    <div class="leg">Seguro Vida</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-acidentes"><img src="img/seguradoras/acidentado.jpg"></a>
+                    <div class="leg">Seguro de Acidentes Pessoais</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-residencial"><img src="img/seguradoras/residencial.jpg"></a>
+                    <div class="leg">Seguro Residencial</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-automovel"><img src="img/seguradoras/automovel.png"></a>
+                    <div class="leg">Seguro de Automóvel</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-agricola"><img src="img/seguradoras/agricola.jpg"></a>
+                    <div class="leg">Seguro Agrícola</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-empresarial"><img src="img/seguradoras/empresarial.jpg"></a>
+                    <div class="leg">Seguro Empresarial</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#seg-viagem"><img src="img/seguradoras/viagem.jpg"></a>
+                    <div class="leg">Seguro Viagem</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#plan-saude"><img src="img/seguradoras/saude.jpeg"></a>
+                    <div class="leg">Plano de Saúde</div>
+                </div>
+
+                <div class="img-tipo">
+                    <a href="produtos.html#plan-ondontologico"><img src="img/seguradoras/odontologico.png"></a>
+                    <div class="leg">Plano Odontológico</div>
+                </div>
+                
+            </article>
+
+<!--seguradoras-->
+            <h3 id="seguradora">CONHEÇA AS NOSSAS PARCEIRAS</h3>
+            <article class="flex-container">
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Allianz.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Amil.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/bradesco.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/CNU Unimed Saude.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Essor.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/HDI.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Icatu.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Mapfre.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Mongeral MAG.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Previsul.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Sabemi.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Sompo.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Suhai.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/SulAmerica Direto.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/SulAmerica.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Sura.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Tokio Marine.png" style="margin: 5%;" width="200px"></a>
+                </div>
+
+                <div class="img-segura>">
+                    <a><img src="img/seguradoras/Zurich.jpg" style="margin: 5%;" width="200px"></a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="media"> <!--BOTÕES DE MIDIA-->
+            <ul>
+                <li class="media"><a href="tel:+55061993637015"><img src="img/telefone.png" alt="Telefone" class="img-midias"></a></li>
+                <li class="media"><a href="https://www.instagram.com/brokerway/"><img src="img/instagram.png" alt="Instagram" class="img-midias"></a></li>
+                <li class="media"><a href="https://br.linkedin.com/company/broker-way-corretora-de-seguros"><img src="img/linkedin.png" alt="Linkedin" class="img-midias"></a></li>
+                <li class="media"><a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="img/email.png" alt="Email" class="img-midias"></a></li>
+                <li class="media"><a href="https://goo.gl/maps/K2Fb22HX3dv2hX7e6"><img src="img/local.png" alt="Localização" class="img-midias"></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p> &copy 2021 Broker Way, Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
